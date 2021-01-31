@@ -1,7 +1,7 @@
 /* Raleway Regular 400 */
 @font-face {
     font-family: 'Raleway';
-    src: url(../WAXOM/fonts/Raleway/Raleway-Regular.ttf);
+    src: url(../waxon/fonts/Raleway/Raleway-Regular.ttf);
     font-style: normal;
     font-weight: 400;
 }
@@ -9,7 +9,7 @@
 /* Raleway Medium 500 */
 @font-face {
     font-family: 'Raleway';
-    src: url(../WAXOM/fonts/Raleway/Raleway-Medium.ttf);
+    src: url(../waxon/fonts/Raleway/Raleway-Medium.ttf);
     font-style: normal;
     font-weight: 500;
 }
@@ -17,7 +17,7 @@
 /* Raleway Semi-Bolt 600 */
 @font-face {
     font-family: 'Raleway';
-    src: url(../WAXOM/fonts/Raleway/Raleway-SemiBold.ttf);
+    src: url(../waxon/fonts/Raleway/Raleway-SemiBold.ttf);
     font-style: normal;
     font-weight: 600;
 }
@@ -25,7 +25,7 @@
 /* Montserrat Light 300 */
 @font-face {
     font-family: 'Montserrat';
-    src: url(../WAXOM/fonts/Montserrat/Montserrat-Light.ttf);
+    src: url(../waxon/fonts/Montserrat/Montserrat-Light.ttf);
     font-style: normal;
     font-weight: 300;
 }
@@ -33,7 +33,7 @@
 /* Montserrat Regular 400 */
 @font-face {
     font-family: 'Montserrat';
-    src: url(../WAXOM/fonts/Montserrat/Montserrat-Regular.ttf);
+    src: url(../waxon/fonts/Montserrat/Montserrat-Regular.ttf);
     font-style: normal;
     font-weight: 400;
 }
@@ -41,7 +41,7 @@
 /* Roboto Regular 400 */
 @font-face {
     font-family: 'Roboto';
-    src: url(../WAXOM/fonts/Roboto_Mono/RobotoMono-Regular.ttf);
+    src: url(../waxon/fonts/Roboto_Mono/RobotoMono-Regular.ttf);
     font-style: normal;
     font-weight: 400;
 }
@@ -86,7 +86,9 @@
 }
 
 @mixin width-content {
-    padding: 0 calc(50% - 1280px / 2);
+    padding-left: calc(50% - 1280px / 2);
+    padding-right: calc(50% - 1280px / 2);
+
 }
 
 @mixin button {
@@ -422,7 +424,8 @@ span {
 
         &-text {
             @include content_text;
-            color: #8C8C8C
+            color: #8C8C8C;
+            padding-top: 20px;
         }
     }
 
@@ -536,6 +539,7 @@ span {
         &-text {
             @include content_text;
             color: #8C8C8C;
+            padding-top: 20px;
         }
 
         &-list {
@@ -549,17 +553,12 @@ span {
             &-item {
                 width: 120px;
                 height: 32px;
-
                 margin: 0 10px;
-
                 border-radius: 3px;
-
                 @include content_text;
-
                 display: flex;
                 align-items: center;
                 justify-content: center;
-
                 background-color: #fff;
                 border-color: #EBEBEB;
                 border-style: solid;
@@ -597,7 +596,7 @@ span {
 
     &-gallery {
         margin: 0 auto;
-        padding-left: 15px;
+        padding: 0 0%;
         list-style-image: none;
         display: flex;
         flex-wrap: wrap;
@@ -670,7 +669,7 @@ span {
     }
 
     &-load {
-        margin: 31px 0 0;
+        padding: 31px 0;
         display: flex;
         justify-content: center
     }
@@ -694,7 +693,7 @@ span {
 
 //ВИДЕО
 .video {
-    margin-top: 33px;
+
     overflow: hidden;
     z-index: 100;
     position: relative;
@@ -764,13 +763,14 @@ span {
 
     &-img {
         padding-right: 64px;
+        vertical-align: bottom;
     }
 
     &-content {
         display: flex;
         flex-direction: column;
         width: 670px;
-        padding: 0 20px;
+        padding: 20px;
 
         &-title {
             margin: 0;
@@ -819,6 +819,7 @@ span {
     background: radial-gradient(94.87% 15543.47% at 4.58% 100%, #211B19 0%, #4E3326 100%);
 
     &-list {
+        margin: 0 auto;
         list-style-type: none;
         display: flex;
         justify-content: space-evenly;
@@ -867,6 +868,170 @@ span {
 
         }
     }
+}
+
+//НОВОСТНАЯ ЛЕНТА
+.posts {
+    background-color: #fff;
+
+    &-content {
+        @include content-widht;
+        padding: 100px 20% 0;
+
+        &-title {
+            @include content_title;
+
+        }
+
+        &-text {
+            @include content_text;
+            color: #8C8C8C;
+            padding-top: 20px;
+        }
+
+    }
+
+    &-news {
+        margin: 0 auto;
+        padding: 0 0%;
+        list-style-image: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        &-item {
+            width: 370px;
+            padding-top: 30px;
+            display: flex;
+            flex-direction: column;
+
+
+
+
+            &-img {
+
+                position: relative;
+
+                &-align {
+                    vertical-align: bottom;
+                    transition: 0.5s;
+                }
+
+            }
+
+            &-date {
+                width: 50px;
+                position: absolute;
+                top: 17px;
+                left: 23px;
+
+
+
+                &-number {
+                    @include content_text;
+                    background: #363636;
+                    border-radius: 3px 3px 0 0;
+                    font-size: 30px;
+                    padding: 6px 0 0;
+                    color: #FFFFFF;
+                    text-align: center;
+                    line-height: 30px;
+                }
+
+                &-month {
+                    background: #242424;
+                    border-radius: 0px 0px 3px 3px;
+                    text-align: center;
+                    color: #FFFFFF;
+                    font-family: Roboto;
+                    font-size: 12px;
+                    padding: 6px 0;
+                }
+            }
+
+            &-block {
+                padding: 31px 36px 22px 23px;
+                border: 1px solid #B3B3B3;
+                border-top-color: transparent;
+                box-sizing: border-box;
+            }
+
+            &-title {
+                font-size: 20px;
+                text-align: left;
+                padding: 0 auto;
+                color: #555555;
+                line-height: 23px;
+            }
+
+            &-text {
+                margin: 0 auto;
+                @include content_text;
+                line-height: 22px;
+                text-align: left;
+                color: #000000;
+                padding-top: 22px;
+            }
+
+            &-readmore {
+                text-decoration: none;
+                color: #C7B299;
+                fill: #C7B299;
+
+
+                &-text {
+                    padding-top: 17px;
+                    margin: 0;
+                }
+
+            }
+        }
+
+        &-item:hover .posts-news-item-block {
+            background-color: #352F2D;
+            border: 1px solid #352F2D;
+
+        }
+
+        &-item:hover .posts-news-item-title {
+            color: #C7B299;
+        }
+
+        &-item:hover .posts-news-item-text {
+            color: #FFFFFF
+        }
+
+        &-item:hover .posts-news-item-date-number {
+            background-color: #C7B199;
+        }
+
+        &-item:hover .posts-news-item-date-month {
+            background-color: #A48D71;
+        }
+
+        &-item:hover .posts-news-item-img-align {
+            filter: brightness(0.6);
+        }
+
+    }
+
+    &-carusel {
+        display: flex;
+        justify-content: center;
+        padding: 54px 0 38px;
+
+        &-item {
+            fill: #D1D1D1;
+            transition: 00.5s;
+            padding: 0 9px;
+        }
+
+        &-item:hover {
+            fill: #C7B299;
+        }
+    }
+
+
 }
 
 //Партнеры 

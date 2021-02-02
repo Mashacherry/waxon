@@ -3,7 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
     <link rel="stylesheet" href="style.css">
     <title>WAXOM</title>
 </head>
@@ -12,33 +14,44 @@
 
     <header class="header">
         <nav class=" header-bar">
-            <div class="header-bar-logo header-bar-logo-text"><img src="img/logos.png" alt="logo" width="63px"
-                    height="55px">
+            <div class="header-bar-logo header-bar-logo-text"><img src="img/logos.png" alt="logo" width="63"
+                    height="55">
                 Waxom
             </div>
-            <div class="header-bar-nav">
-                <a href="#" class="header-bar-nav-text"> Home</a>
-                <a href="#" class="header-bar-nav-text"> About us</a>
-                <a href="#" class="header-bar-nav-text"> Portfolio</a>
-                <a href="#" class="header-bar-nav-text"> Features</a>
-                <a href="#" class="header-bar-nav-text"> Blog</a>
-                <a href="#" class="header-bar-nav-text"> Pricing</a>
-                <a href="#" class="header-bar-nav-text"> Shortcodes</a>
-                <a href="#" class="header-bar-nav-text"> Contact</a>
-                <a href="#" class="header-bar-nav-text">
-                    <svg width="18" height="24" viewBox="0 0 18 24" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M15 3H13.5C13.5 1.34 11.48 0 9 0C6.51 0 4.5 1.34 4.5 3H3C1.35 3 0 4.34 0 6V21C0 22.65 1.35 23.99 3 23.99H15C16.65 23.99 17.99 22.65 17.99 21V6C17.99 4.34 16.65 3 15 3ZM9 1.5C10.66 1.5 12 1.96 12 3H6C6 1.96 7.34 1.5 9 1.5ZM16.49 21C16.49 21.82 15.82 22.49 15 22.49H3C2.17 22.49 1.5 21.82 1.5 21V19.5H16.49V21ZM16.49 18H1.5V6C1.5 5.17 2.17 4.5 3 4.5H4.5V9H6V4.5H12V9H13.5V4.5H15C15.82 4.5 16.49 5.17 16.49 6V18Z" />
-                    </svg>
-                </a>
-                <a href="#" class="header-bar-nav-text">
-                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M23.76 22.68L17.57 16.59C19.19 14.82 20.19 12.49 20.19 9.93C20.19 4.44 15.67 0 10.09 0C4.52 0 0 4.44 0 9.93C0 15.42 4.52 19.86 10.09 19.86C12.5 19.86 14.71 19.03 16.45 17.64L22.66 23.76C22.97 24.06 23.46 24.06 23.76 23.76C24.06 23.46 24.06 22.98 23.76 22.68ZM10.09 18.33C5.38 18.33 1.55 14.57 1.55 9.93C1.55 5.29 5.38 1.52 10.09 1.52C14.81 1.52 18.63 5.29 18.63 9.93C18.63 14.57 14.81 18.33 10.09 18.33Z" />
-                    </svg>
-                </a>
-            </div>
+
+            <nav class="nav">
+
+                <button class="burger"><i class="fas fa-bars"></i></button>
+
+                <div class="menu ">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="" class="nav-link">About us</a></li>
+                        <li class="nav-item"><a href="" class="nav-link">Portfolio</a></li>
+                        <li class="nav-item"><a href="" class="nav-link">Features</a></li>
+                        <li class="nav-item"><a href="" class="nav-link">Blog</a></li>
+                        <li class="nav-item"><a href="" class="nav-link">Pricing</a></li>
+                        <li class="nav-item"><a href="" class="nav-link">Shortcodes</a></li>
+                        <li class="nav-item"><a href="" class="nav-link">Contact</a></li>
+                        <li class="nav-item"><a href="" class="nav-link">
+                                <svg width="18" height="24" viewBox="0 0 18 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M15 3H13.5C13.5 1.34 11.48 0 9 0C6.51 0 4.5 1.34 4.5 3H3C1.35 3 0 4.34 0 6V21C0 22.65 1.35 23.99 3 23.99H15C16.65 23.99 17.99 22.65 17.99 21V6C17.99 4.34 16.65 3 15 3ZM9 1.5C10.66 1.5 12 1.96 12 3H6C6 1.96 7.34 1.5 9 1.5ZM16.49 21C16.49 21.82 15.82 22.49 15 22.49H3C2.17 22.49 1.5 21.82 1.5 21V19.5H16.49V21ZM16.49 18H1.5V6C1.5 5.17 2.17 4.5 3 4.5H4.5V9H6V4.5H12V9H13.5V4.5H15C15.82 4.5 16.49 5.17 16.49 6V18Z" />
+                                </svg></a></li>
+                        <li class="nav-item"><a href="" class="nav-link"> <svg width="24" height="24"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M23.76 22.68L17.57 16.59C19.19 14.82 20.19 12.49 20.19 9.93C20.19 4.44 15.67 0 10.09 0C4.52 0 0 4.44 0 9.93C0 15.42 4.52 19.86 10.09 19.86C12.5 19.86 14.71 19.03 16.45 17.64L22.66 23.76C22.97 24.06 23.46 24.06 23.76 23.76C24.06 23.46 24.06 22.98 23.76 22.68ZM10.09 18.33C5.38 18.33 1.55 14.57 1.55 9.93C1.55 5.29 5.38 1.52 10.09 1.52C14.81 1.52 18.63 5.29 18.63 9.93C18.63 14.57 14.81 18.33 10.09 18.33Z" />
+                                </svg></a></li>
+
+                    </ul>
+                </div>
+            </nav>
         </nav>
+        <script src="https://kit.fontawesome.com/28aa9b1bb7.js" crossorigin="anonymous"></script>
+
+
+
         <section class="header-slogan">
             <div class="header-slogan-arrow">
                 <a href="#" class="header-slogan-arrow-header">
@@ -208,19 +221,19 @@
 
                 <div class="project-content-list">
                     <button class="project-content-list-item">
-                        <p class="project-contentlist-text"> All </p>
+                        All
                     </button>
                     <button class="project-content-list-item">
-                        <p class="project-contentlist-text"> Web Design </p>
+                        Web Design
                     </button>
                     <button class="project-content-list-item">
-                        <p class="project-contentlist-text"> Mobile App </p>
+                        Mobile App
                     </button>
                     <button class="project-content-list-item">
-                        <p class="project-contentlist-text"> Illustration </p>
+                        Illustration
                     </button>
                     <button class="project-content-list-item">
-                        <p class="project-contentlist-text"> Photography </p>
+                        Photography
                     </button>
 
                 </div>
@@ -311,7 +324,7 @@
             <source src="video/WorkingStation.mp4" type="video/mp4">
             <!-- <source src="video/plane.webm" type="video/webm"> -->
         </video>
-        </div>
+
 
     </section>
 
@@ -556,8 +569,129 @@
 
         </div>
     </section>
-    <footer></footer>
+    <footer>
+        <div class="footer">
 
+            <div class="footer-logo">
+                <div class="header-bar-logo header-bar-logo-text"><img src="img/logos.png" alt="logo" width="63"
+                        height="67">
+                    Waxom
+                </div>
+                <p class="footer-logo-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                    nibh
+                    euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                    nostrud exerci suscipit lobortis claritatem.</p>
+
+                <a class="footer-logo-link" href="#">Read more
+                    <svg width="5" height="8" viewBox="0 0 5 8" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.95 7.8201L4.79 4.3501C5 4.1601 5 3.8401 4.79 3.6501L4.76 3.6401L0.95 0.180098C0.74 -0.00990234 0.39 -0.00990234 0.17 0.180098C0.07 0.270098 0 0.400098 0 0.540098V7.4601C0 7.6001 0.07 7.7201 0.18 7.8101L0.17 7.8201C0.39 8.0101 0.74 8.0101 0.95 7.8201Z" />
+                    </svg> </a>
+            </div>
+            <ul class="footer-list">
+                <li class="footer-list-item">
+                    <p class="footer-list-item-title">Recent Posts</p>
+                    <ul class="footer-list-item-post_list">
+                        <li class="footer-list-item-post_list-item">
+                            <p class="footer-list-item-post_list-item-title"> September 08, 2015</p>
+                            <p class="footer-list-item-post_list-item-text">Lorem ipsum dolor sit amet, consectetuer
+                                adipiscing elit</p>
+                            <hr>
+                        </li>
+                        <li class="footer-list-item-post_list-item">
+                            <p class="footer-list-item-post_list-item-title"> September 08, 2015</p>
+                            <p class="footer-list-item-post_list-item-text">Lorem ipsum dolor sit amet, consectetuer
+                                adipiscing elit</p>
+                            <hr>
+                        </li>
+                        <li class="footer-list-item-post_list-item">
+                            <p class="footer-list-item-post_list-item-title"> September 08, 2015</p>
+                            <p class="footer-list-item-post_list-item-text">Lorem ipsum dolor sit amet, consectetuer
+                                adipiscing elit</p>
+                            <hr>
+                        </li>
+                    </ul>
+
+                </li>
+                <li class="footer-list-item">
+                    <p class="footer-list-item-title">Our Twitter</p>
+                    <ul class="footer-list-item-twitter">
+                        <li class="footer-list-item-twitter-item">
+                            <p class="footer-list-item-twitter-item-title"> <a class="name_link" href="#">@waxom </a>
+                                Cum
+                                soluta nobis eleifend option congue nihil imperdiet doming</p>
+                            <p class="footer-list-item-twitter-item-text">3 mins ago
+                                adipiscing elit</p>
+                            <hr>
+                        </li>
+                        <li class="footer-list-item-twitter-item">
+                            <p class="footer-list-item-twitter-item-title"> Mirum est <a class="name_link"
+                                    href="#">#envato
+                                </a>
+                                notare quam littera gothica, quam nunc putamus parum anteposuerit litterarum</p>
+                            <p class="footer-list-item-twitter-item-text">5 hours ago
+                                adipiscing elit</p>
+                            <hr>
+                        </li>
+                        <li class="footer-list-item-twitter-item">
+                            <p class="footer-list-item-twitter-item-title">Soluta nobis option <a class="twitter_link"
+                                    href="#">bit.ly/1Hniso7</a></p>
+                            <p class="footer-list-item-twitter-item-text">20 days ago
+                                adipiscing elit</p>
+                            <hr>
+                        </li>
+                    </ul>
+                </li>
+                <li class="footer-list-item">
+                    <p class="footer-list-item-title">Dribbble Widget</p>
+                    <ul class="footer-list-item-widget">
+                        <li class="footer-list-item-widget-img"><a href="#"><img src="img/dribbole_phone.png"
+                                    alt="image"></a></li>
+                        <li class="footer-list-item-widget-img"><a href="#"><img src="img/dribbole_bags.png"
+                                    alt="image"></a></li>
+                        <li class="footer-list-item-widget-img"><a href="#"><img src="img/dribbole_book.png"
+                                    alt="image"></a></li>
+                        <li class="footer-list-item-widget-img"><a href="#"><img src="img/dribbole_pict.png"
+                                    alt="image"></a></li>
+
+
+                    </ul>
+                </li>
+            </ul>
+
+
+        </div>
+        <div class="copyright ">
+            <ul class="copyright-nav">
+                <li class="copyright-nav-item">
+                    <a href="#" class="copyright-nav-item-text"> Copyright © 2015 Waxom </a>
+                    <p class="copyright-nav-item-rectangle">|</p>
+                </li>
+
+                <li class="copyright-nav-item">
+                    <a href="#" class="copyright-nav-item-text"> Privacy Policy</a>
+                    <p class="copyright-nav-item-rectangle">|</p>
+                </li>
+                <li class="copyright-nav-item">
+                    <a href="#" class="copyright-nav-item-text"> FAQ</a>
+                    <p class="copyright-nav-item-rectangle">|</p>
+                </li>
+                <li class="copyright-nav-item">
+                    <a href="#" class="copyright-nav-item-text"> Support</a>
+                </li>
+            </ul>
+
+        </div>
+    </footer>
+
+    <script>
+        let menu = document.querySelector('.menu');
+        let burger = document.querySelector('.burger');
+
+        burger.onclick = function () {
+            menu.classList.toggle('menu-open');
+        }
+    </script>
 </body>
 
 </html>
